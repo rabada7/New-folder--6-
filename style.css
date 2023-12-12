@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Pro:wght@400;500&display=swap');
+@font-face {
+    font-family: 'Brown';
+    src: url('path/to/Brown-Regular.ttf') format('truetype'),
+         url('path/to/Brown-Bold.ttf') format('truetype');
+}
+ 
+
+body {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgba(144, 238, 144, 0.04);
+    z-index: 1;
+  }
+  
+  .main-body {
+    width: 100%; 
+    max-width: 1440px; 
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 80px 140px 81px 140px;
+    box-sizing: border-box;
+    z-index: 2;
+    background-color: rgba(144, 238, 144, 0.04);
+  }
+  
+  .form {
+    width: 580px;
+    height: auto;
+    /* height: 678px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    box-sizing: border-box;
+    margin-left: 20px;
+    font-family: 'Sofia Pro', sans-serif;
+  }
+  
+  .logo {
+    width: 468px;
+    /* width: auto; */
+    padding: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 275px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    font-family: 'Brown', sans-serif;
+  }
+  .logo p {
+    color: #737373;
+    font-family: Brown;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    max-height: 100px;
+    overflow: hidden;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+  }
+  
+  
+  .input-box {
+    display: flex;
+    height: 72px;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 15px;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0; 
+  }
+  
+  .form-row .input-box {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .form-row .input-box:last-child {
+    margin-right: 0;
+  }
+  
+  .input-box span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input-box input[type="date"],
+  .input-box input[type="number"],
+  .input-box input[type="text"],
+  .input-box select {
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    height: 48px;
+    width: 238px;
+  }
+  
+  .input-box input[type="password"],
+  .input-box select[name="Activity"],
+  .input-box button {
+    width: 100%;
+    padding: 10px;
+    height: 48px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    width: auto;
+    background: #2ec4b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .foot {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+ 
+
+  }
+  
+  a {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #2ec4b6;
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration-line: underline;
+  }
+  @media screen and (max-width: 768px) {
+    .main-body {
+        padding: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .logo {
+        width: 100%;
+        margin-right: 0;
+        padding: 10px;
+        text-align: center;
+        height: auto;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+    .input-box {
+        margin-right: 0;
+        width: 100%;
+    }
+    .input-box input[type="text"],
+    .input-box input[type="number"],
+    .input-box input[type="date"],
+    .input-box select,
+    .input-box button {
+        width: 100%;
+        margin-right: 0;
+    }
+    .foot {
+      position: static;
+  }
+}
